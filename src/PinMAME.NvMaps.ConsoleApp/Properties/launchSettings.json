@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "PinMAME.NvMaps.ConsoleApp": {
+      "commandName": "Project",
+      "commandLineArgs": "\"..\\..\\..\\..\\PinMAMENvMapsTests\\data\\f14_l1\\f14_l1.nv.json\" \"..\\..\\..\\..\\PinMAMENvMapsTests\\data\\f14_l1\\f14_l1.nv\""
+    }
+  }
+}

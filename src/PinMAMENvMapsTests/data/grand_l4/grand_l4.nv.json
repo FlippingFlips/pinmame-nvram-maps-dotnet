@@ -1,0 +1,98 @@
+{
+  "_notes": [
+    "Compiled by Horsepin."
+  ],
+  "_copyright": "Copyright (C) 2022 https://github.com/horseyhorsey",
+  "_license": "GNU Lesser General Public License v3.0",
+  "_endian": "big",
+  "_ramsize": 2094,  
+  "_roms": [
+    "grand_l4"
+  ],
+  "_fileformat": 0.1,
+  "_version": 0.1,
+  "_char_map": "???????????ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+  "high_scores": [
+    {
+      "label": "High Score 1",
+      "short_label": "#1",
+      "initials":{"start":2018,"encoding":"ch","length":3},
+      "score": {"encoding":"bcd","length":4,"start":1831}
+    },
+    {
+      "label": "High Score 2",
+      "short_label": "#2",
+      "score": {"encoding":"bcd","length":4,"start":1835}
+    },
+    {
+      "label": "High Score 3",
+      "short_label": "#3",
+      "score": {"encoding":"bcd","length":4,"start":1839}
+    },
+    {
+      "label": "High Score 4",
+      "short_label": "#4",
+      "score": {"encoding":"bcd","length":4,"start":1843}
+    }
+  ],
+  "adjustments": {
+    "A.1 Standard Adjustments": {
+      "01": {"label":"Auto Replay","start":1920,"encoding":"bcd","min":4,"max":50,"default":15,"suffix":" %","special_values":{"4":"SCORES"}},
+      "02": {"label":"Replay Start","start":1921,"encoding":"bcd","min":8,"max":20,"default":10},
+      "03": {"label":"Replay Levels","start":1922,"encoding":"bcd","min":0,"max":3,"default":0,"multiple_of":0,"values":[""],"special_values":{"0":"1","1":"2","2":"3","3":"4"}},
+      "06": {"label":"Replay Award","start":1925,"encoding":"enum","values":["Credit","Ball","Audit","Coil"]},
+      "07": {"label":"Special Award","start":1926,"encoding":"enum","values":["Credit","Ball","Score"]},
+      "08": {"label":"Match Feature","start":1927,"encoding":"enum","default":1,"values":["OFF","ON"]},
+      "09": {"label":"Balls / Game","short_label":"BPG","start":1928,"encoding":"bcd","min":1,"max":9,"default":3},
+      "10": {"label":"Tilt Warning","short_label":"TW","start":1929,"encoding":"bcd","min":1,"max":5,"default":3},
+      "11": {"label":"Maximum EX. Ball","short_label":"MEB","start":1930,"encoding":"bcd","min":0,"max":9,"default":2},
+      "12": {"label":"Maximum Credits","start":1931,"encoding":"bcd","min":5,"max":99,"default":10},
+      "13": {"label":"Highest Scores","start":1932,"encoding":"enum","default":1,"values":["OFF","ON"]},
+      "14": {"label":"Backup Hi. Scr. 1","start":1933,"encoding":"bcd","min":0,"max":99,"default":30,"multiple_of":0,"suffix":"","scale":100000,"offset":0},
+      "15": {"label":"Backup Hi. Scr. 2","start":1934,"encoding":"bcd","min":0,"max":99,"default":26,"suffix":"","scale":100000,"offset":0},
+      "16": {"label":"Backup Hi. Scr. 3","start":1935,"encoding":"bcd","min":0,"max":99,"default":22,"suffix":"","scale":100000},
+      "17": {"label":"Backup Hi. Scr. 4","start":1936,"encoding":"bcd","min":0,"max":99,"default":18,"suffix":"","scale":100000},
+      "18": {"label":"Hi. Scr. 1 Credits","start":1937,"encoding":"bcd","min":0,"max":10,"default":3},
+      "19": {"label":"Hi. Scr. 2 Credits","start":1938,"encoding":"bcd","min":0,"max":3,"default":1},
+      "20": {"label":"Hi. Scr. 3 Credits","start":1939,"encoding":"bcd","min":0,"max":3,"default":1},
+      "21": {"label":"Hi. Scr. 4 Credits","start":1940,"encoding":"bcd","min":0,"max":3,"default":1},
+      "22": {"label":"H.S.Reset Every","start":1941,"encoding":"bcd","min":0,"max":99,"default":6,"suffix":" Plays","scale":1000,"special_values":{"0":"OFF"}},
+      "23": {"label":"Free Play","start":1942,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "24": {"label":"Coinage","start":1943,"encoding":"bcd"},
+      "31": {"label":"4 Bank Cycle","start":1950,"encoding":"bcd","min":0,"max":9,"default":4},
+      "32": {"label":"4 Bank Timeout","start":1951,"encoding":"bcd","min":0,"max":9,"default":5},
+      "33": {"label":"3 Bank Timeout","start":1952,"encoding":"bcd","min":0,"max":9,"default":5},
+      "34": {"label":"Mystery Time","start":1953,"encoding":"bcd","min":0,"max":9,"default":5},
+      "35": {"label":"Magnet Time","start":1954,"encoding":"bcd","min":0,"max":9,"default":5},
+      "36": {"label":"Speedso Time","start":1955,"encoding":"bcd","min":0,"max":9,"default":3},
+      "37": {"label":"Memory B. Mults","start":1956,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "38": {"label":"Memory 3 Bank","start":1957,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "39": {"label":"Ramps Spot A.B","start":1958,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "40": {"label":"Atmode Sound","start":1959,"encoding":"enum","default":1,"values":["NO","YES"]},
+      "41": {"label":"X.Ball Memory","start":1960,"encoding":"enum","default":1,"values":["NO","YES"]},
+      "42": {"label":"A/B Memory","start":1961,"encoding":"enum","default":1,"values":["NO","YES"]},
+      "43": {"label":"Lizard Spot A.B","start":1962,"encoding":"enum","default":1,"values":["NO","YES"]},
+      "44": {"label":"3 Bank Awards","start":1963,"encoding":"enum","default":1,"values":["EASY","HARD","HARDER"]},
+      "45": {"label":"Unused Adjust","start":1964,"encoding":"bcd","default":0},
+      "46": {"label":"Unused Adjust","start":1965,"encoding":"bcd","default":0},
+      "47": {"label":"Unused Adjust","start":1966,"encoding":"bcd","default":0},
+      "48": {"label":"Unused Adjust","start":1967,"encoding":"bcd","default":0},
+      "49": {"label":"Custom Message","start":1968,"encoding":"enum","default":1,"values":["OFF","ON"]},
+      "50": {"label":"Sw.Alarm Bell","start":1969,"encoding":"enum","default":1,"values":["NO","YES"]},
+      "51": {"label":"English Text","start":1970,"encoding":"enum","default":0,"values":["ENGLISH","GERMAN"]},
+      "52": {"label":"Unused Adjust","start":1971,"encoding":"bcd"},
+      "59": {"label":"Install AddABall","start":2015,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "60": {"label":"Install 5 Ball","start":2016,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "61": {"label":"Install Novelty","start":2017,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "62": {"label":"Install Ex.Easy","start":2018,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "63": {"label":"Install Easy","start":2019,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "64": {"label":"Install Medium","start":2020,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "65": {"label":"Install Hard","start":2021,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "66": {"label":"Install Ex. Hard","start":2022,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "67": {"label":"Auto Burn-In","start":2023,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "68": {"label":"Clear Coins","start":2024,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "69": {"label":"Clear Audits","start":2025,"encoding":"enum","default":0,"values":["NO","YES"]},
+      "70": {"label":"Install Factory","start":2026,"encoding":"enum","default":0,"values":["NO","YES"]}
+    }
+  }
+}

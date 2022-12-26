@@ -1,0 +1,11 @@
+﻿GC: DUB 7,904,247,710
+1st: SLL 7,500,000,000
+2nd: BRE 7,000,000,000
+3rd: LFS 6,500,000,000
+4th: RCF 6,000,000,000
+
+---Last Game---
+2017-09-28 00:01
+14,280,010
+
+- Exported using https://github.com/tomlogic/py-pinmame-nvmaps
