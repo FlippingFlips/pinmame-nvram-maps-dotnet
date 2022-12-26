@@ -1,0 +1,12 @@
+﻿1st: EJB 4,000,000
+2nd: CLF 3,800,000
+3rd: JCD 3,600,000
+4th: KWD 3,400,000
+
+---Last Game---
+21,950
+270,170
+109,250
+6,830
+
+- Exported using https://github.com/tomlogic/py-pinmame-nvmaps
